@@ -4,6 +4,7 @@ import { useTransactionError } from 'gamba-react-v2'
 import React from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import { Modal } from './components/Modal'
+import { TOS_HTML } from './constants'
 import { useToast } from './hooks/useToast'
 import { useUserStore } from './hooks/useUserStore'
 import Dashboard from './sections/Dashboard/Dashboard'
@@ -12,7 +13,6 @@ import Header from './sections/Header'
 import RecentPlays from './sections/RecentPlays/RecentPlays'
 import Toasts from './sections/Toasts'
 import { MainWrapper, TosInner, TosWrapper } from './styles'
-import { TOS_HTML } from './constants'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -50,6 +50,7 @@ function ErrorHandler() {
 export default function App() {
   const newcomer = useUserStore((state) => state.newcomer)
   const set = useUserStore((state) => state.set)
+
   return (
     <>
       {newcomer && (

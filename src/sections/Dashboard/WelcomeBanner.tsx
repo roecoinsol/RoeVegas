@@ -1,5 +1,8 @@
+import { useWallet } from '@solana/wallet-adapter-react'
+import { useWalletModal } from '@solana/wallet-adapter-react-ui'
 import React from 'react'
 import styled from 'styled-components'
+import { useUserStore } from '../../hooks/useUserStore'
 
 const Buttons = styled.div`
   overflow: hidden;
@@ -27,7 +30,7 @@ const Buttons = styled.div`
     border-radius: 10px;
     padding: 10px;
     background: #ffffffdf;
-    transition: background .2s ease;
+    transition: background-color .2s ease;
     color: black;
     cursor: pointer;
     &:hover {
@@ -99,6 +102,16 @@ const Welcome = styled.div`
 `
 
 export function WelcomeBanner() {
+  const wallet = useWallet()
+  const walletModal = useWalletModal()
+  const store = useUserStore()
+  const copyInvite = () => {
+    store.set({ userModal: true })
+    if (!wallet.connected) {
+      walletModal.setVisible(true)
+    }
+  }
+
   return (
     <Welcome>
       <div>
@@ -108,11 +121,11 @@ export function WelcomeBanner() {
         </p>
       </div>
       <Buttons>
+        <button onClick={copyInvite}>
+          💸 Copy Invite
+        </button>
         <button onClick={() => window.open('https://v2.gamba.so/', '_blank')}>
           🚀 Add Liquidity
-        </button>
-        <button onClick={() => window.open('https://github.com/gamba-labs/gamba', '_blank')}>
-          👨‍💻 Build your own
         </button>
         <button onClick={() => window.open('https://discord.gg/HSTtFFwR', '_blank')}>
           💬 Discord
