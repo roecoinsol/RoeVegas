@@ -50,11 +50,11 @@ export const POOLS = [
   lp('DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263'),
   // JUP:
   lp('JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN'),
-  lp('H8cstTfTxPEm5qP3UXgga8Bdzm2MCDGAghJTgovPy6Y1', 'H83nsJJe11WY7TjhiVoDq5xmiYs7rU2iY4FweJuahVz2'),
   // Mother:
   lp('3S8qX1MsMqRbiwKg2cQyx7nis1oHMgaCuc9c4VfvVdPN'),
   // GUAC:
   lp('AZsHEMXd36Bj1EMNXhowJajpUXzrKcK57wW4ZGXVa7yR'),
+  lp('H8cstTfTxPEm5qP3UXgga8Bdzm2MCDGAghJTgovPy6Y1', 'H83nsJJe11WY7TjhiVoDq5xmiYs7rU2iY4FweJuahVz2'),
   // Wormhole:
   lp('85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ'),
   // Fake token:
@@ -70,12 +70,30 @@ export const DEFAULT_POOL = POOLS[0]
  */
 export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
   {
-    mint: FAKE_TOKEN_MINT,
-    name: 'Fake',
-    symbol: 'FAKE',
-    image: '/fakemoney.png',
+    mint: new PublicKey('8ebK1sKpUqvE2nh9aQTgEnbJMsZCGpphk7EExtbA4QGJ'),
+    name: 'Roecoin',
+    symbol: '$ROE',
+    image: 'https://slkl2ncfqajhet2px4dgtzyqslxcor7bw4uexgzjexkeeepc2wcq.arweave.net/ktS9NEWAEnJPT78GaecQku4nR-G3KEubKSXUQhHi1YU',
     baseWager: 1e9,
     decimals: 9,
+    usdPrice: 0,
+  },
+  {
+    mint: new PublicKey('85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ'),
+    name: 'Bonk',
+    symbol: 'Bonk',
+    image: 'https://quei6zhlcfsxdfyes577gy7bkxmuz7qqakyt72xlbkyh7fysmoza.arweave.net/hQiPZOsRZXGXBJd_82PhVdlM_hACsT_q6wqwf5cSY7I',
+    baseWager: 1e5,
+    decimals: 5,
+    usdPrice: 0,
+  },
+  {
+    mint: new PublicKey('85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ'),
+    name: 'Jupiter',
+    symbol: 'JUP',
+    image: 'https://static.jup.ag/jup/icon.png',
+    baseWager: 1e6,
+    decimals: 6,
     usdPrice: 0,
   },
   {
@@ -85,6 +103,15 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
     image: 'https://wormhole.com/token.png',
     baseWager: 1e6,
     decimals: 6,
+    usdPrice: 0,
+  },
+  {
+    mint: FAKE_TOKEN_MINT,
+    name: 'Fake',
+    symbol: 'FAKE',
+    image: '/fakemoney.png',
+    baseWager: 1e9,
+    decimals: 9,
     usdPrice: 0,
   },
 ]
