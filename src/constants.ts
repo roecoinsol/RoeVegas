@@ -19,7 +19,7 @@ export const PLATFORM_SHARABLE_URL = 'roecoin.fun'
 export const PLATFORM_CREATOR_FEE = 0.05 // 1% !!max 5%!!
 
 // Jackpot fee (in %)
-export const PLATFORM_JACKPOT_FEE = 0.01 // 0.1%
+export const PLATFORM_JACKPOT_FEE = 0.001 // 0.1%
 
 // Referral fee (in %)
 export const PLATFORM_REFERRAL_FEE = 0.0025 // 0.25%
