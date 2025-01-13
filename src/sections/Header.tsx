@@ -89,9 +89,9 @@ export default function Header() {
         </Modal>
       )}
       <StyledHeader>
-        <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
+        <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
           <Logo to="/">
-            <img alt="Gamba logo" src="/logo.svg" />
+            <img alt="Roecoin logo" src="/logo.svg" />
           </Logo>
           <span style={{ fontSize: '25px', fontWeight: 'bold', color: 'white' }}>RoeVegas</span>
         </div>
