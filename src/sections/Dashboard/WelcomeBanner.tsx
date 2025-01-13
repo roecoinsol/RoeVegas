@@ -3,6 +3,7 @@ import { useWalletModal } from '@solana/wallet-adapter-react-ui'
 import React from 'react'
 import styled from 'styled-components'
 import { useUserStore } from '../../hooks/useUserStore'
+import roevegas from './Roevegas.jpg';
 
 const Buttons = styled.div`
   overflow: hidden;
@@ -49,6 +50,7 @@ const Welcome = styled.div`
     }
   }
 
+/*
   @keyframes backgroundGradient {
     0% {
       background-position: 0% 50%;
@@ -60,8 +62,13 @@ const Welcome = styled.div`
       background-position: 0% 50%;
     }
   }
+  */
 
-  background: linear-gradient(-45deg, #ffb07c, #ff3e88, #2969ff, #ef3cff, #ff3c87);
+  //background: linear-gradient(-45deg, #ffb07c, #ff3e88, #2969ff, #ef3cff, #ff3c87);
+  background-image: url(${roevegas});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: 300% 300%;
   animation: welcome-fade-in .5s ease, backgroundGradient 30s ease infinite;
   border-radius: 10px;
