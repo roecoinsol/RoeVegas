@@ -80,6 +80,7 @@ const Welcome = styled.div`
   flex-direction: column;
   padding: 20px;
   filter: drop-shadow(0 4px 3px rgba(0,0,0,.07)) drop-shadow(0 2px 2px rgba(0,0,0,.06));
+  height: 512px;
 
   & img {
     animation-duration: 5s;
