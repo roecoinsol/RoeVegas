@@ -69,7 +69,7 @@ const Welcome = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 300% 300%;
+  //background-size: 300% 300%;
   animation: welcome-fade-in .5s ease, backgroundGradient 30s ease infinite;
   border-radius: 10px;
   position: relative;
