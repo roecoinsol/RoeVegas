@@ -3,7 +3,7 @@ import { useWalletModal } from '@solana/wallet-adapter-react-ui'
 import React from 'react'
 import styled from 'styled-components'
 import { useUserStore } from '../../hooks/useUserStore'
-import roevegas from './Roevegas.jpg';
+import roevegas from '/RoeVegas.jpg';
 
 const Buttons = styled.div`
   overflow: hidden;
