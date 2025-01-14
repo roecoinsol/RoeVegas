@@ -19,7 +19,7 @@ const Buttons = styled.div`
   & > button {
     border: none;
     border-radius: 10px;
-    padding: 10px 15px;
+    padding: 5px 10px;
     background: #ffffffdf;
     color: black;
     cursor: pointer;
@@ -48,7 +48,7 @@ const Welcome = styled.div`
   height: 768px;
 
   & > div {
-    position: absolute;
+    /*position: absolute;*/
     /*bottom: 20px;  Position text close to the bottom */
     text-align: center;
     color: white;
@@ -80,17 +80,32 @@ export function WelcomeBanner() {
   return (
     <Welcome>
       <Buttons>
-        <button onClick={copyInvite}>💸 Copy Invite</button>
-        <button onClick={() => window.open('https://v2.gamba.so/', '_blank')}>
+        <button title="Share your link with new users to earn 0.25% every time they play on RoeVegas" onClick={copyInvite}>💸 Copy Invite</button>
+        <button title="Add liquidy to any Gamba pool" onClick={() => window.open('https://v2.gamba.so/', '_blank')}>
           🚀 Add Liquidity
         </button>
-        <button onClick={() => window.open('https://discord.gg/HSTtFFwR', '_blank')}>
-          💬 Discord
+        <button title="Join our Telegram" onClick={() => window.open('https://t.me/roecoinSOL', '_blank')}>
+          💬 Telegram
+        </button>
+        <button title="Follow us on Twitter" onClick={() => window.open('https://x.com/roecoinSOL', '_blank')}>
+          🐦 Twitter
+        </button>
+        <button title="Chart" onClick={() => window.open('https://dexscreener.com/solana/8ebK1sKpUqvE2nh9aQTgEnbJMsZCGpphk7EExtbA4QGJ', '_blank')}>
+          📈 DexScreener
+        </button>
+        <button title="Buy Roecoin on Jupiter" onClick={() => window.open('https://jup.ag/swap/SOL-8ebK1sKpUqvE2nh9aQTgEnbJMsZCGpphk7EExtbA4QGJ', '_blank')}>
+          💸 Buy Roecoin
+        </button>
+        <button title="Check Roecoin website" onClick={() => window.open('https://roecoin.org/', '_blank')}>
+          💬 Website
+        </button>
+        <button title="All Roecoin Links" onClick={() => window.open('https://beacons.ai/roecoinsol', '_blank')}>
+          🔗 Beacons
         </button>
       </Buttons>
       <div>
-        <h1>Welcome to Gamba v2 👋</h1>
-        <p>A fair, simple, and decentralized casino on Solana.</p>
+        <h1>Welcome to RoeVegas Casino using Gamba open source👋</h1>
+        <p>A provably fair, simple, and decentralized casino on Solana. 🎰</p>
       </div>
     </Welcome>
   )
