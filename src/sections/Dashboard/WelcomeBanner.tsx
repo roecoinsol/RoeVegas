@@ -9,7 +9,7 @@ const Buttons = styled.div`
   display: flex;
   flex-wrap: wrap; /* Allow buttons to wrap */
   gap: 15px;
-  padding: 10px; /* Add some padding around the buttons */
+  /* padding: 10px; Add some padding around the buttons */
   /*margin-top: 50px;  Adjust spacing from the top */
   justify-content: center;
   align-items: center;
@@ -19,7 +19,7 @@ const Buttons = styled.div`
   & > button {
     border: none;
     border-radius: 10px;
-    padding: 5px 10px;
+   /* padding: 5px 10px; */
     background: #ffffffdf;
     color: black;
     cursor: pointer;
@@ -96,8 +96,8 @@ export function WelcomeBanner() {
         <button title="Buy Roecoin on Jupiter" onClick={() => window.open('https://jup.ag/swap/SOL-8ebK1sKpUqvE2nh9aQTgEnbJMsZCGpphk7EExtbA4QGJ', '_blank')}>
           💸 Buy Roecoin
         </button>
-        <button title="Check Roecoin website" onClick={() => window.open('https://roecoin.org/', '_blank')}>
-          💬 Website
+        <button title="Learn more about Roecoin" onClick={() => window.open('https://roecoin.org/', '_blank')}>
+          🌐 Website
         </button>
         <button title="All Roecoin Links" onClick={() => window.open('https://beacons.ai/roecoinsol', '_blank')}>
           🔗 Beacons
