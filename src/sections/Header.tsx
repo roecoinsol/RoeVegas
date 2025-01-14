@@ -89,7 +89,7 @@ export default function Header() {
         </Modal>
       )}
       <StyledHeader>
-        <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
           <Logo to="/">
             <img alt="Roecoin logo" src="/logo.svg" />
           </Logo>
