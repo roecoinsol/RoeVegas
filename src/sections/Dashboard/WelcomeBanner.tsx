@@ -6,34 +6,26 @@ import { useUserStore } from '../../hooks/useUserStore'
 import roevegas from '/RoeVegas.jpg';
 
 const Buttons = styled.div`
-  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
-
-  @media (min-width: 800px) {
-    height: 100%;
-  }
-
-  @media (max-width: 800px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    padding-top: 0!important;
-  }
+  gap: 15px;
+  position: absolute;
+  top: 20px; /* Position buttons close to the top */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
 
   & > button {
     border: none;
-    width: 100%;
     border-radius: 10px;
-    padding: 10px;
+    padding: 10px 15px;
     background: #ffffffdf;
-    transition: background-color .2s ease;
     color: black;
     cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+
     &:hover {
       background: white;
     }
@@ -41,70 +33,35 @@ const Buttons = styled.div`
 `
 
 const Welcome = styled.div`
-  @keyframes welcome-fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-/*
-  @keyframes backgroundGradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  */
-
-  //background: linear-gradient(-45deg, #ffb07c, #ff3e88, #2969ff, #ef3cff, #ff3c87);
   background-image: url(${roevegas});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  //background-size: 300% 300%;
-  animation: welcome-fade-in .5s ease, backgroundGradient 30s ease infinite;
   border-radius: 10px;
   position: relative;
-  overflow: hidden;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
-  filter: drop-shadow(0 4px 3px rgba(0,0,0,.07)) drop-shadow(0 2px 2px rgba(0,0,0,.06));
-  height: 512px;
-
-  & img {
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    width: 100px;
-    height: 100px;
-    top: 0;
-    right: 0;
-    &:nth-child(1) {animation-delay: 0s;}
-    &:nth-child(2) {animation-delay: 1s;}
-  }
+  filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.07)) drop-shadow(0 2px 2px rgba(0, 0, 0, 0.06));
+  height: 768px;
 
   & > div {
-    padding: 0px;
-    filter: drop-shadow(0 4px 3px rgba(0,0,0,.07)) drop-shadow(0 2px 2px rgba(0,0,0,.06));
-  }
+    position: absolute;
+    bottom: 20px; /* Position text close to the bottom */
+    text-align: center;
+    color: white;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 
-  @media (min-width: 800px) {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    padding: 0;
-    & > div {
-      padding: 40px;
+    & h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    & p {
+      margin: 5px 0 0;
+      font-size: 16px;
     }
   }
 `
@@ -122,16 +79,8 @@ export function WelcomeBanner() {
 
   return (
     <Welcome>
-      <div>
-        <h1>Welcome to Gamba v2 👋</h1>
-        <p>
-          A fair, simple and decentralized casino on Solana.
-        </p>
-      </div>
       <Buttons>
-        <button onClick={copyInvite}>
-          💸 Copy Invite
-        </button>
+        <button onClick={copyInvite}>💸 Copy Invite</button>
         <button onClick={() => window.open('https://v2.gamba.so/', '_blank')}>
           🚀 Add Liquidity
         </button>
@@ -139,6 +88,10 @@ export function WelcomeBanner() {
           💬 Discord
         </button>
       </Buttons>
+      <div>
+        <h1>Welcome to Gamba v2 👋</h1>
+        <p>A fair, simple, and decentralized casino on Solana.</p>
+      </div>
     </Welcome>
   )
 }
