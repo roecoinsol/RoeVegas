@@ -8,7 +8,7 @@ import roevegas from '/RoeVegas.jpg';
 const Buttons = styled.div`
   display: flex;
   flex-wrap: wrap; /* Allow buttons to wrap */
-  gap: 15px;
+  gap: 10px;
   /* padding: 10px; Add some padding around the buttons */
   /*margin-top: 50px;  Adjust spacing from the top */
   justify-content: center;
