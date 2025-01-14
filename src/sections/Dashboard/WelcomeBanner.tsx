@@ -7,14 +7,14 @@ import roevegas from '/RoeVegas.jpg';
 
 const Buttons = styled.div`
   display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap */
+  gap: 15px;
+  padding: 10px; /* Add some padding around the buttons */
+  /*margin-top: 50px;  Adjust spacing from the top */
   justify-content: center;
   align-items: center;
-  gap: 15px;
-  position: absolute;
-  top: 20px; /* Position buttons close to the top */
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
+  width: 100%; /* Ensure it spans the full width */
+  position: relative; /* Position relative to its container */
 
   & > button {
     border: none;
@@ -49,7 +49,7 @@ const Welcome = styled.div`
 
   & > div {
     position: absolute;
-    bottom: 20px; /* Position text close to the bottom */
+    /*bottom: 20px;  Position text close to the bottom */
     text-align: center;
     color: white;
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
