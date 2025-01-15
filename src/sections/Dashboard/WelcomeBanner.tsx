@@ -16,6 +16,10 @@ const Buttons = styled.div`
   width: 100%; /* Ensure it spans the full width */
   position: relative; /* Position relative to its container */
 
+  @media (max-width: 800px) {
+    top: 5%; /* Push buttons closer to the top */
+  }
+
   & > button {
     border: none;
     border-radius: 10px;
@@ -46,7 +50,7 @@ const Welcome = styled.div`
   padding: 20px;
   filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.07)) drop-shadow(0 2px 2px rgba(0, 0, 0, 0.06));
   height: 768px;
-
+  
   & > div {
     /*position: absolute;*/
     /*bottom: 20px;  Position text close to the bottom */
@@ -62,6 +66,35 @@ const Welcome = styled.div`
     & p {
       margin: 5px 0 0;
       font-size: 16px;
+    }
+  }
+
+    @media (max-width: 800px) {
+    height: auto; /* Allow the height to adjust dynamically */
+    background-size: contain; /* Shrink the image to fit within the container */
+    min-height: 300px;
+
+    & > div:first-child {
+      /* Welcome text adjustments for small screens */
+      position: relative;
+      margin-top: auto;
+      bottom: -92px; /* Push text slightly below the container */
+      h1 {
+        font-size: 20px; /* Smaller font for better fit */
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+
+    & > div:last-child {
+      /* Buttons adjustments for small screens */
+      top: -49px; /* Push buttons slightly above the container */
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      justify-content: space-between;
+      padding-top: inherit;
     }
   }
 `
