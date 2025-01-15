@@ -46,6 +46,10 @@ const Welcome = styled.div`
   padding: 20px;
   filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.07)) drop-shadow(0 2px 2px rgba(0, 0, 0, 0.06));
   height: 768px;
+
+  @media (max-width: 1000px) {
+    height: 525px;
+  }
   
   & > div {
     /*position: absolute;*/
