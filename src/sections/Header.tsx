@@ -45,6 +45,21 @@ const Logo = styled(NavLink)`
   & > img {
     height: 100%;
   }
+
+  @media (max-width: 513px) {
+    margin-right: 5px;
+  }
+`
+
+const Title = styled.span`
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  padding-right: 10px;
+
+  @media (max-width: 513px) {
+    font-size: 18px;
+  }
 `
 
 export default function Header() {
@@ -93,7 +108,7 @@ export default function Header() {
           <Logo to="/">
             <img alt="Roecoin logo" src="/logo.svg" />
           </Logo>
-          <span style={{ fontSize: '25px', fontWeight: 'bold', color: 'white' }}>RoeVegas</span>
+          <Title>RoeVegas</Title>
         </div>
         <div style={{ display: 'flex', gap: '10px', alignItems: 'center', position: 'relative' }}>
           {pool.jackpotBalance > 0 && (
