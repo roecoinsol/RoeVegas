@@ -55,10 +55,10 @@ const Title = styled.span`
   font-size: 25px;
   font-weight: bold;
   color: white;
-  padding-right: 10px;
+  padding-right: 7px;
 
   @media (max-width: 513px) {
-    font-size: 18px;
+    font-size: 17px;
   }
 `
 
