@@ -51,7 +51,7 @@ export const POOLS = [
   // JUP:
   lp('JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN'),
   // Mother:
-  lp('3S8qX1MsMqRbiwKg2cQyx7nis1oHMgaCuc9c4VfvVdPN'),
+//  lp('3S8qX1MsMqRbiwKg2cQyx7nis1oHMgaCuc9c4VfvVdPN'),
   // GUAC:
   lp('AZsHEMXd36Bj1EMNXhowJajpUXzrKcK57wW4ZGXVa7yR'),
   lp('H8cstTfTxPEm5qP3UXgga8Bdzm2MCDGAghJTgovPy6Y1', 'H83nsJJe11WY7TjhiVoDq5xmiYs7rU2iY4FweJuahVz2'),
@@ -96,7 +96,7 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
     decimals: 6,
     usdPrice: 0,
   },
-  {
+ /* {
     mint: new PublicKey('3S8qX1MsMqRbiwKg2cQyx7nis1oHMgaCuc9c4VfvVdPN'),
     name: 'MOTHER IGGY',
     symbol: 'MOTHER',
@@ -104,7 +104,7 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
     baseWager: 1e6,
     decimals: 6,
     usdPrice: 0,
-  },
+  }, */
   {
     mint: new PublicKey('AZsHEMXd36Bj1EMNXhowJajpUXzrKcK57wW4ZGXVa7yR'),
     name: 'Guacamole',
