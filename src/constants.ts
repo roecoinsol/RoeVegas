@@ -104,7 +104,7 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
     baseWager: 1e6,
     decimals: 6,
     usdPrice: 0,
-  }, */
+  },*/
   {
     mint: new PublicKey('AZsHEMXd36Bj1EMNXhowJajpUXzrKcK57wW4ZGXVa7yR'),
     name: 'Guacamole',
