@@ -40,7 +40,7 @@ const lp = (tokenMint: PublicKey | string, poolAuthority?: PublicKey | string): 
  */
 export const POOLS = [
   
-  // ROE:
+  // $ROE:
   lp('8ebK1sKpUqvE2nh9aQTgEnbJMsZCGpphk7EExtbA4QGJ'),
   // SOL:
   lp('So11111111111111111111111111111111111111112'),
