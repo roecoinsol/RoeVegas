@@ -96,7 +96,7 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
     decimals: 6,
     usdPrice: 0,
   },
- /* {
+ /*{
     mint: new PublicKey('3S8qX1MsMqRbiwKg2cQyx7nis1oHMgaCuc9c4VfvVdPN'),
     name: 'MOTHER IGGY',
     symbol: 'MOTHER',
@@ -104,7 +104,7 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
     baseWager: 1e6,
     decimals: 6,
     usdPrice: 0,
-  }, */
+  },*/
   {
     mint: new PublicKey('AZsHEMXd36Bj1EMNXhowJajpUXzrKcK57wW4ZGXVa7yR'),
     name: 'Guacamole',
