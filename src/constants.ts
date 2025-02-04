@@ -40,10 +40,10 @@ const lp = (tokenMint: PublicKey | string, poolAuthority?: PublicKey | string): 
  */
 export const POOLS = [
   
-  // $ROE:
-  lp('8ebK1sKpUqvE2nh9aQTgEnbJMsZCGpphk7EExtbA4QGJ'),
   // SOL:
   lp('So11111111111111111111111111111111111111112'),
+  // $ROE:
+  lp('8ebK1sKpUqvE2nh9aQTgEnbJMsZCGpphk7EExtbA4QGJ'),
   // USDC:
   lp('EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v'),
   // BONK:
