@@ -108,8 +108,8 @@ export function WelcomeBanner() {
         </button>
       </Buttons>
       <div>
-        <h1>Welcome to RoeVegas Casino using Gamba open source👋</h1>
-        <p>A provably fair, simple, and decentralized casino on Solana. 🎰</p>
+        <h1>💎🎰 Welcome to RoeVegas Casino built on Gamba 🎰💎</h1>
+        <p>💎 A provably fair, simple, and decentralized casino on Solana. 💎</p>
       </div>
     </Welcome>
   )
