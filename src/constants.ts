@@ -43,7 +43,7 @@ export const POOLS = [
   // SOL:
   lp('So11111111111111111111111111111111111111112'),
   // $ROE:
- // lp('8ebK1sKpUqvE2nh9aQTgEnbJMsZCGpphk7EExtbA4QGJ'),
+  lp('8ebK1sKpUqvE2nh9aQTgEnbJMsZCGpphk7EExtbA4QGJ'),
   // USDC:
   lp('EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v'),
   // BONK:
@@ -69,7 +69,7 @@ export const DEFAULT_POOL = POOLS[0]
  * Alternatively, we can provide a fetcher method to automatically fetch metdata. See TOKEN_METADATA_FETCHER below.
  */
 export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
-  /*{
+  {
     mint: new PublicKey('8ebK1sKpUqvE2nh9aQTgEnbJMsZCGpphk7EExtbA4QGJ'),
     name: 'Roecoin',
     symbol: '$ROE',
@@ -77,7 +77,7 @@ export const TOKEN_METADATA: (Partial<TokenMeta> & {mint: PublicKey})[] = [
     baseWager: 1e9,
     decimals: 9,
     usdPrice: 0,
-  },*/
+  },
   {
     mint: new PublicKey('DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263'),
     name: 'Bonk',
